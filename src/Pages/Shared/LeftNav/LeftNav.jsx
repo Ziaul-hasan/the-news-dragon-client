@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './LeftNav.css'
+import FeaturedNews from './FeaturedNews';
 
 const LeftNav = () => {
     const [categories, setCategories] = useState([]);
@@ -20,6 +21,7 @@ const LeftNav = () => {
                     </p>)
                 }
             </div>
+            <FeaturedNews></FeaturedNews>
         </div>
     );
 };
